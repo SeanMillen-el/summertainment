@@ -8,10 +8,25 @@ body{
 }
 
 .card {
-    margin: 10%;
+    margin: 25%;
     
 }
 
-.container{
+.act {
+    text-align:center;
+    color:black;
+    text-shadow: 2px 2px yellow;
+    list-style-type: none;
+}
 
+.disc {
+    text-align:center;
+    padding:100px;
+    color:aliceblue;
+    text-shadow: 2px 2px #ff0000
+}
+
+.nav-pills {
+    margin-bottom: 100px;
+    margin-left: 50px;
 }

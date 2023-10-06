@@ -8,80 +8,85 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!--nav start-->
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#card">Card</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Act">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#disc">Description</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-    <h1 class = "head"> Los Cabos! </h1>
+    <!--nav end-->
+    <h1 class = "head" id="home"> Welcome 2 Los Cabos!</h1>
     <h4 class = "head"> Mexico</h4>
    <!--card start-->
-   <div class="container">
+   <div class="container-fluid" id="card">
     <div class="row">
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="card" style="width: 18rem;">
       <img src="https://live.staticflickr.com/3738/9263165040_b879d82808_b.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Villa del Palmar</h5>
         <p class="card-text">Villa del Palmar Beach Resort is a luxurious seaside retreat offering pristine beaches, elegant accommodations, and a range of amenities for a relaxing vacation experience. Nestled along the coast, this resort boasts stunning views, lush landscapes, and a welcoming atmosphere for guests seeking a tranquil escape.        </p>
-        <a href="https://cabo.villadelpalmar.com/" class="btn btn-secondary">Go somewhere</a>
+        <a href="https://cabo.villadelpalmar.com/" class="btn btn-secondary">Check it out</a>
       </div>
     </div>
   </div>
-      <div class="row">
-    <div class="col-6">
+      
+    <div class="col-sm-6">
       <div class="card" style="width: 18rem;">
-      <img src="https://live.staticflickr.com/3738/9263165040_b879d82808_b.jpg" class="card-img-top" alt="...">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Lovers beach</h5>
         <p class="card-text">Lover's Beach in Los Cabos is a secluded paradise nestled between dramatic rock formations, offering pristine golden sands and crystal-clear waters for a romantic escape. Accessible only by boat, it provides an intimate and breathtaking setting for couples to unwind and enjoy each other's company in a stunning natural environment.
         </p>
-        <a href="https://cabo.villadelpalmar.com/" class="btn btn-secondary">Go somewhere</a>
+        <a href="https://tristanolivia.com/blog/cabo-san-lucas-guide-to-lovers-beach/" class="btn btn-secondary">Check it out</a>
       </div>
     </div>
   </div>
       </div>
     </div>
-   </div> 
    
 
 
-<!--card end carousel start-->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-<!--carousel end-->
+<!--card end p start-->
+   <h3 class="act" id="Act">Activities</h3>    
+    <ul>
+      <li class="act">Swimming and Snorkeling</li>
+      <li class="act">Whale Watching</li>
+      <li class="act">Boat Tours</li>
+      <li class="act">ATV Tours</li>
+      <li class="act">Zip Lining</li>
+      <li class="act">Sunset Cruises</li>
+    </ul>
+
+    <p class="disc" id="disc">Cabo San Lucas, situated at the southern tip of Mexico's Baja California Peninsula, is a vibrant coastal paradise renowned for its breathtaking natural beauty and lively atmosphere. Its iconic landmark, the Arch of Cabo San Lucas, is a testament to its geological wonders and is a must-see for visitors. The region boasts pristine beaches with turquoise waters, perfect for swimming, snorkeling, and sunbathing, while adventure seekers can engage in thrilling water sports like jet skiing and parasailing. Beyond the shoreline, the rugged desert landscape offers exciting activities like ATV tours and zip lining, providing an adrenaline rush amidst stunning scenery. The town itself is a blend of Mexican culture and modern amenities, featuring a lively nightlife with vibrant bars, clubs, and eateries serving delectable seafood and traditional Mexican cuisine. With its rich cultural heritage, beautiful landscapes, and exciting recreational opportunities, Cabo San Lucas is a favored destination for travelers seeking an unforgettable sun-soaked getaway.
+    </p> 
+<!--p end & pills start-->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="https://www.tripadvisor.com/Tourism-g152515-Cabo_San_Lucas_Los_Cabos_Baja_California-Vacations.html">Trip Adviser</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.visitloscabos.travel/">Go Your self</a>
+  </li>
+</ul>
+<!--pills end-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
